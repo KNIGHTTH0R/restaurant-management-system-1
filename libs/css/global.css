@@ -1,0 +1,26 @@
+/* global style */
+:root {
+	--primary-color: #ec620f;
+	--white-muted-color: #dddddd;
+	--black-muted-color: #222222;
+	--default-padding: 1.6rem;
+	--section-margin: 4rem;   
+}
+
+@font-face {
+	font-family: russo_one;
+	src: url('../../assets/fonts/russon_one_regular.ttf');
+}
+
+
+*{
+	box-sizing: border-box;
+}
+
+.text-primary-color {
+	color: var(--primary-color); 
+}
+
+.text-center{
+	text-align: center;
+}
