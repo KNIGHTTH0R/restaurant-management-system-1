@@ -100,7 +100,23 @@
 			<div class="container">
 				<h3 class="section-title-dark text-center">Discover Healthy Meal</h3>
 				<p class="muted-text-dark text-center">One step at a time for your favorite food</p>
-				<span class="category white-text text-center">Breakfast</span>
+				<div class="row">
+					<div class="col m4">
+						<div class="category-title-box active">
+							<span class="category white-text text-center">Starter</span>
+						</div>
+					</div>
+					<div class="col m4">
+						<div class="category-title-box">
+							<span class="category white-text text-center">Main Course</span>
+						</div>
+					</div>
+					<div class="col m4">
+						<div class="category-title-box">
+							<span class="category white-text text-center">Drinks &amp; Extras</span>
+						</div>
+					</div>
+				</div>
 				<hr>
 				<div class="row">
 					<div class="col m4 menu-wrapper">
@@ -171,7 +187,7 @@
 							<li>THURSDAY: 7AM - 8PM</li>
 							<li>FRIDAY: 7AM - 8PM</li>
 							<li>SAT &amp; SUN: <span class="red-text">CLOSED</span></li>
-						</ul> 
+						</ul>
 					</div>
 					<div class="col m5">
 						<img src="assets/images/chef-portrait.png" class="portrait" alt="chef">
@@ -179,8 +195,93 @@
 				</div>
 			</div>
 		</section>
-		
-		<script src="vendor/materialize/js/materialize.min.js"></script>
-		<script src="libs/js/app.js"></script>
-	</body>
-</html>
+		<section id="section" class="contact">
+			<div class="container">
+				<h3 class="section-title-dark text-center">Contact Us</h3>
+				<p class="muted-text-dark text-center">One step at a time for your favorite food</p>
+				<div class="row">
+					<div class="col m6 reservation-wrapper">
+						<p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+						<p><b>Reserve a table by send as a message.</b></p>
+						<div class="input-dark input-field">
+							<input id="name" type="text" class="validate">
+							<label class="active" for="name">Name</label>
+						</div>
+						<div class="input-dark input-field">
+							<input id="email" type="email" class="validate">
+							<label for="email">Email</label>
+						</div>
+						<div class="input-dark input-field">
+							<input id="no-of-guest" type="number" min="0" max="100" class="validate">
+							<label class="active" for="no-of-guest">How many people</label>
+						</div>
+						
+						<div class="input-dark input-field">
+							<input id="when" type="datetime-local" class="validate">
+						</div>
+						<div class="input-dark input-field">
+							<textarea id="message" class="materialize-textarea"></textarea>
+							<label for="message">Message or Special Requirements</label>
+						</div>
+						
+						<button type="submit" name="send" class="btn btn-primary">
+						<i class="fa fa-paper-plane"></i> SEND MESSAGE
+						</button>
+					</div>
+					<div class="row">
+						<div class="col m6">
+							<p>Find us at  245 blk. Alongside Don Roces Avenue Makati City or call us at 05050515-122330</p>
+							<p><b>Check our location and come with our ellegant restaurant.</b></p>
+							<img src="assets/images/download.jpeg" alt="maps" class="map">
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer id="footer">
+				<div class="container">
+					<div class="row">
+						<div class="col m4 contact">
+							<h5 class="footer-titles">Our Address &amp; Contact</h5>
+							<p><i class="fa fa-map-marker-alt"></i> 245 blk. Alongside Don Roces Avenue Makati City</p>
+							<p><i class="fa fa-envelope"></i> admin@example.com</p>
+							<p><i class="fa fa-phone"></i> +639976540114</p>
+						</div>
+						<div class="col m4 quick-links">
+							<h5 class="footer-titles">Quick Links</h5>
+							<a href="#">Get Discount here</a>
+							<a href="#">Healthy Food Menu</a>
+							<a href="#">Reservation</a>
+							<a href="#">Services</a>
+							<a href="#">Contact Us</a>
+						</div>
+						<div class="col m4 newsletter">
+							<h5 class="footer-titles">Subscribe to newsletter</h5>
+							<p>Join with us and stay connected for latest news about our new foods, upcoming events and Healthy lifestyle tips.</p>
+							<form action="" method="post" accept-charset="utf-8">
+								<input type="email" name="subs-email" placeholder="enter your email">
+								<button type="submit" value="subscribe" class="btn-subscribe">
+									Join</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="footer-lower-section text-center">
+					<div class="social-icons">
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-youtube"></i>
+						<i class="fab fa-facebook-square"></i> 
+					</div>
+					<div class="policies">
+						<a href="#">Privacy policy</a>
+						<a href="#">Terms of use</a>
+						<a href="#">Customer rights</a>
+					</div>
+					<p>&copy; 2020 Mr.Chef, All rights reserved.</p>
+				</div>
+			</footer>
+			
+			
+			<script src="vendor/materialize/js/materialize.min.js"></script>
+			<script src="libs/js/app.js"></script>
+		</body>
+	</html>

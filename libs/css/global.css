@@ -1,7 +1,7 @@
 /* global style */
 :root {
 	--primary-color: #ec620f;
-	--white-muted-color: #dddddd;
+	--white-muted-color: #ccc;
 	--black-muted-color: #222222;
 	--default-padding: 1.6rem;
 	--section-margin: 4rem;   
@@ -23,4 +23,50 @@
 
 .text-center{
 	text-align: center;
+}
+
+/* alter default style of materialize */
+
+
+/* form inputs for dark BG */
+
+div.input-dark.input-field input[type=text]:focus + label {
+     color: white; 
+}
+
+div.input-dark.input-field input[type=text]:focus {
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 white;
+}
+
+div.input-dark.input-field input[type=email]:focus + label {
+     color: white; 
+}
+
+div.input-dark.input-field input[type=email]:focus {
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 white;
+}
+
+div.input-dark.input-field input[type=number]:focus + label {
+     color: white; 
+}
+
+div.input-dark.input-field input[type=number]:focus {
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 white;
+}
+
+div.input-dark.input-field textarea:focus + label {
+     color: white; 
+}
+
+div.input-dark.input-field textarea:focus {
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 white;
+}
+
+div.input-dark.input-field input[type=datetime-local]:focus {
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 white;
 }
