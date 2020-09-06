@@ -20,27 +20,28 @@
 				<nav class="nav-dark">
 					<div class="container">
 						<div class="nav-wrapper">
-							<a href="#" class="brand-logo">
+							<a href="" class="brand-logo">
 								<img src="assets/images/logo.png" alt="logo" id="nav-logo"> MR.<span class="text-primary-color">CHEF</span>
 							</a>
 							<a href="#" class="sidenav-trigger" data-target="mobile-nav"><i class="fa fa-bars"></i></a>
-							<ul id="nav-mobile" class="right hide-on-med-and-down">
-								<li><a href="">Services</a></li>
-								<li><a href="">Menu</a></li>
-								<li><a href="">About us</a></li>
-								<li><a href="">Contact</a></li>
-								<li><a href="">Reservation</a></li>
+							<ul id="nav-mobile" class="right hide-on-med-and-down top-nav">
+								<li class="active"><a href="#header">Home</a></li> 
+								<li><a href="#services">Services</a></li> 
+								<li><a href="#menu">Menu</a></li>  
+								<li><a href="#about">About us</a></li>
+								<li><a href="#contact">Contact &amp; Reservation</a></li>
 							</ul>
 						</div>
 					</div>
 				</nav>
 			</div>
-			<ul id="mobile-nav" class="sidenav">
-				<li><a href="">Services</a></li>
-				<li><a href="">Menu</a></li>
-				<li><a href="">About us</a></li>
-				<li><a href="">Contact</a></li>
-				<li><a href="">Reservation</a></li>
+			<ul id="mobile-nav" class="sidenav"> 
+				<li><a href="#header">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#menu">Menu</a></li>
+				<li><a href="#about">About us</a></li>
+				<li><a href="#contact">Contact &amp; Reservation</a></li>
+	 
 			</ul>
 			<div class="container center showcase">
 				<img src="assets/images/logo.png" alt="logo" class="logo">
@@ -51,7 +52,7 @@
 		</header>
 		<!-- /HEADER -->
 		<!-- SERVICES -->
-		<section id="section" class="services">
+		<section id="services" class="services">
 			<div class="container">
 				<h3 class="section-title-light text-center">Our Services</h3>
 				<p class="muted-text-light text-center">One step at a time for your favorite food</p>
@@ -96,7 +97,7 @@
 			</div>
 		</section>
 		<!-- /SERVICES -->
-		<section id="section" class="menu">
+		<section id="menu" class="menu">
 			<div class="container">
 				<h3 class="section-title-dark text-center">Discover Healthy Meal</h3>
 				<p class="muted-text-dark text-center">One step at a time for your favorite food</p>
@@ -171,7 +172,7 @@
 				<hr>
 			</div>
 		</section>
-		<section id="section" class="about">
+		<section id="about" class="about">
 			<div class="container">
 				<h3 class="section-title-light text-center">Who we are</h3>
 				<p class="muted-text-light text-center">One step at a time for your favorite food</p>
@@ -195,7 +196,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="section" class="contact">
+		<section id="contact" class="contact">
 			<div class="container">
 				<h3 class="section-title-dark text-center">Contact Us</h3>
 				<p class="muted-text-dark text-center">One step at a time for your favorite food</p>
@@ -282,6 +283,8 @@
 			
 			
 			<script src="vendor/materialize/js/materialize.min.js"></script>
+			<script src="libs/js/materialize.init.js"></script>
+			<script src="libs/js/functions.js"></script>
 			<script src="libs/js/app.js"></script>
 		</body>
 	</html>

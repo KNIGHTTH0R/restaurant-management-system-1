@@ -43,6 +43,15 @@ nav.nav-dark {
 	background-color: #111;
 }
 
+nav.nav-dark ul li a {
+	transition: all 250ms linear;
+}
+
+nav.nav-dark ul li.active { 
+	background-color: black;
+	border-bottom: 2px solid var(--primary-color); 
+}
+
 nav.nav-dark ul li a:hover {
 	background-color: black;
 	border-bottom: 2px solid var(--primary-color); 
@@ -92,6 +101,7 @@ nav.nav-dark ul li a:hover {
 .btn.btn-primary{
 	background-color: var(--primary-color);
 	margin-right: .3rem;
+	transition: background-color 300ms linear;
 }
 
 .btn.btn-secondary{
@@ -101,7 +111,7 @@ nav.nav-dark ul li a:hover {
 	margin-left: .3rem;
 }	
 
-.btn.btn-primary:hover{
+.btn.btn-primary:hover{ 
 	background-color: #ff751a; 
 }
 
@@ -113,9 +123,9 @@ nav.nav-dark ul li a:hover {
 
 /* sections / segments */
 
-section#section{
+section#services, section#menu, section#about, section#contact{ 
 	margin-top: var(--section-margin);  
-	padding: 3rem var(--default-padding);
+	padding: 3rem var(--default-padding); 
 }
 
 .section-title-light, .section-title-dark{
