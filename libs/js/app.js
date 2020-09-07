@@ -5,6 +5,6 @@ navlinks.forEach(function(link){
 	link.addEventListener('click', smoothScroll);
 });
 
-window.addEventListener('scroll', changeActiveLink);
+window.addEventListener('scroll', changeActiveLink); 
 
 	

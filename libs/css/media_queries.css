@@ -1,0 +1,70 @@
+@media screen and (max-width: 600px) {
+
+	/* header */
+
+	#nav-logo {
+		width: 28px;
+		float: left;
+		margin-top: 15px;
+	}
+
+	 nav a.brand-logo {
+		font-size: 23px;
+	 }  
+
+	.logo {
+		max-width: 100px;
+	}
+
+	.header-text{
+		line-height: 2.5rem;
+		margin-top: 20px;
+		margin-bottom: 2.5rem;
+	}
+
+	.header-text > span:first-child{
+		font-size: 2rem;
+	}
+
+	.header-text > span:last-child{
+		font-size: 3rem;
+	}
+
+	.btn.btn-primary{
+		margin-right: .3rem;
+		font-size: .8rem;
+		height: 30px;
+   		line-height: 30px;
+	}
+
+	.btn.btn-secondary{
+		font-size: .8rem;
+		margin-left: .3rem; 
+		height: 30px;
+    	line-height: 24px;
+	}	
+
+
+	/* our menu */
+
+	.menu .row .col.m4{
+		width: 100%;
+	}	 	
+
+	/* contact us */
+
+	section.contact button.btn.btn-primary {
+		width: 100%;
+	}
+
+	/* footer */
+
+	footer#footer .row .col.m4{
+		width: 100%; 
+	}
+
+	footer#footer{
+		text-align: center;
+	}
+
+}
