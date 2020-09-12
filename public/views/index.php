@@ -1,33 +1,18 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="author" content="Federico Flores">
-		<meta name="keywords" content="restaurant, foods, meal, drinks, dessert">
-		<meta name="description" content="A Mr. chef is a restaurant ordering and reservation system
-		for customers">
-		<meta http-equiv="X-UA-Compatible" content="IE-edge">
-		<title>Mr. Chef</title>
-		<link href="libs/css/main.css" rel="stylesheet"></link>
-		<link href="vendor/materialize/css/materialize.min.css" rel="stylesheet" media="screen,projection"></link>
-		<link href="vendor/fontawesome-5/css/all.css" rel="stylesheet">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	</head>
-	<body>
+<?php include_once('layouts/header.php') ?>
 		<!-- HEADER -->
-		<header id="header">
+		<header id="header"> 
 			<div class="navbar-fixed">
 				<nav class="nav-dark">
 					<div class="container">
 						<div class="nav-wrapper">
 							<a href="" class="brand-logo">
-								<img src="assets/images/logo.png" alt="logo" id="nav-logo"> MR.<span class="text-primary-color">CHEF</span>
+								<img src="<?php $mapper->assets('images/logo.png') ?>" alt="logo" id="nav-logo"> MR.<span class="text-primary-color">CHEF</span>
 							</a>
 							<a href="#" class="sidenav-trigger" data-target="mobile-nav"><i class="fa fa-bars"></i></a>
 							<ul id="nav-mobile" class="right hide-on-med-and-down top-nav">
-								<li class="active"><a href="#header">Home</a></li> 
-								<li><a href="#services">Services</a></li> 
-								<li><a href="#menu">Menu</a></li>  
+								<li class="active"><a href="#header">Home</a></li>
+								<li><a href="#services">Services</a></li>
+								<li><a href="#menu">Menu</a></li>
 								<li><a href="#about">About us</a></li>
 								<li><a href="#contact">Contact &amp; Reservation</a></li>
 							</ul>
@@ -35,16 +20,16 @@
 					</div>
 				</nav>
 			</div>
-			<ul id="mobile-nav" class="sidenav"> 
+			<ul id="mobile-nav" class="sidenav">
 				<li><a href="#header">Home</a></li>
 				<li><a href="#services">Services</a></li>
 				<li><a href="#menu">Menu</a></li>
 				<li><a href="#about">About us</a></li>
 				<li><a href="#contact">Contact &amp; Reservation</a></li>
-	 
+				
 			</ul>
 			<div class="container center showcase">
-				<img src="assets/images/logo.png" alt="logo" class="logo">
+				<img src="<?php $mapper->assets('images/logo.png') ?>" alt="logo" class="logo">
 				<h2 class="header-text"><span>Healthy Foods For</span> <br> <span>Healthy Living</span></h2>
 				<a href="#" class="btn btn-primary"><i class="fa fa-utensils"></i> ORDER NOW</a>
 				<a href="#" class="btn btn-secondary"><i class="fa fa-calendar"></i> BOOK A TABLE</a>
@@ -64,8 +49,8 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title">Delivery</span>
-								<p>I am a very simple card. I am good at containing small bits of information.
-								I am convenient because I require little markup to use effectively.</p>
+								<p>We can deliver your fresh, healthy and delicous foods by placing your 
+								orders and fill up some delivery information.</p>
 							</div>
 						</div>
 					</div>
@@ -76,8 +61,8 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title">Book a Table</span>
-								<p>I am a very simple card. I am good at containing small bits of information.
-								I am convenient because I require little markup to use effectively.</p>
+								<p>Schedule a day to reserve a table and watch our live band. We also offer
+								discount for our customers.</p>
 							</div>
 						</div>
 					</div>
@@ -88,10 +73,9 @@
 							</div>
 							<div class="card-content">
 								<span class="card-title">Catering</span>
-								<p>I am a very simple card. I am good at containing small bits of information.
-								I am convenient because I require little markup to use effectively.</p>
+								<p>Mark your calendar and make a deal with our catering service. We offer full-service catering for any events.</p>
 							</div>
-						</div>
+						</div> 
 					</div>
 				</div>
 			</div>
@@ -121,7 +105,7 @@
 				<hr>
 				<div class="row">
 					<div class="col m4 menu-wrapper">
-						<img class="food-img" src="assets/images/steak.jpg" alt="food">
+						<img class="food-img" src="<?php $mapper->assets('images/steak.jpg') ?>" alt="food">
 						<div class="food-box">
 							<p class="food-name white-text">Pampangas Thick Steak</p>
 							<p class="food-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
@@ -129,7 +113,7 @@
 						</div>
 					</div>
 					<div class="col m4 menu-wrapper">
-						<img class="food-img" src="assets/images/steak.jpg" alt="food">
+						<img class="food-img" src="<?php $mapper->assets('images/steak.jpg') ?>" alt="food">
 						<div class="food-box">
 							<p class="food-name white-text">Pampangas Thick Steak</p>
 							<p class="food-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
@@ -137,7 +121,7 @@
 						</div>
 					</div>
 					<div class="col m4 menu-wrapper">
-						<img class="food-img" src="assets/images/steak.jpg" alt="food">
+						<img class="food-img" src="<?php $mapper->assets('images/steak.jpg') ?>" alt="food">
 						<div class="food-box">
 							<p class="food-name white-text">Pampangas Thick Steak</p>
 							<p class="food-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
@@ -145,7 +129,7 @@
 						</div>
 					</div>
 					<div class="col m4 menu-wrapper">
-						<img class="food-img" src="assets/images/steak.jpg" alt="food">
+						<img class="food-img" src="<?php $mapper->assets('images/steak.jpg') ?>" alt="food">
 						<div class="food-box">
 							<p class="food-name white-text">Pampangas Thick Steak</p>
 							<p class="food-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
@@ -153,7 +137,7 @@
 						</div>
 					</div>
 					<div class="col m4 menu-wrapper">
-						<img class="food-img" src="assets/images/steak.jpg" alt="food">
+						<img class="food-img" src="<?php $mapper->assets('images/steak.jpg') ?>" alt="food">
 						<div class="food-box">
 							<p class="food-name white-text">Pampangas Thick Steak</p>
 							<p class="food-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
@@ -161,7 +145,7 @@
 						</div>
 					</div>
 					<div class="col m4 menu-wrapper">
-						<img class="food-img" src="assets/images/steak.jpg" alt="food">
+						<img class="food-img" src="<?php $mapper->assets('images/steak.jpg') ?>" alt="food">
 						<div class="food-box">
 							<p class="food-name white-text">Pampangas Thick Steak</p>
 							<p class="food-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
@@ -191,7 +175,7 @@
 						</ul>
 					</div>
 					<div class="col m5">
-						<img src="assets/images/chef-portrait.png" class="portrait" alt="chef">
+						<img src="<?php $mapper->assets('images/chef-portrait.png') ?>" class="portrait" alt="chef">
 					</div>
 				</div>
 			</div>
@@ -233,58 +217,15 @@
 						<div class="col m6">
 							<p>Find us at  245 blk. Alongside Don Roces Avenue Makati City or call us at 05050515-122330</p>
 							<p><b>Check our location and come with our ellegant restaurant.</b></p>
-							<img src="assets/images/download.jpeg" alt="maps" class="map">
+							<img src="<?php $mapper->assets('images/map.jpeg') ?>" alt="maps" class="map">
 						</div>
 					</div>
 				</div>
 			</section>
-			<footer id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col m4 contact">
-							<h5 class="footer-titles">Our Address &amp; Contact</h5>
-							<p><i class="fa fa-map-marker-alt"></i> 245 blk. Alongside Don Roces Avenue Makati City</p>
-							<p><i class="fa fa-envelope"></i> admin@example.com</p>
-							<p><i class="fa fa-phone"></i> +639976540114</p>
-						</div>
-						<div class="col m4 quick-links">
-							<h5 class="footer-titles">Quick Links</h5>
-							<a href="#">Get Discount here</a>
-							<a href="#">Healthy Food Menu</a>
-							<a href="#">Reservation</a>
-							<a href="#">Services</a>
-							<a href="#">Contact Us</a>
-						</div>
-						<div class="col m4 newsletter">
-							<h5 class="footer-titles">Subscribe to newsletter</h5>
-							<p>Join with us and stay connected for latest news about our new foods, upcoming events and Healthy lifestyle tips.</p>
-							<form action="" method="post" accept-charset="utf-8">
-								<input type="email" name="subs-email" placeholder="enter your email">
-								<button type="submit" value="subscribe" class="btn-subscribe">
-									Join</button>
-							</form>
-						</div>
-					</div>
-				</div>
-				<div class="footer-lower-section text-center">
-					<div class="social-icons">
-						<i class="fab fa-instagram"></i>
-						<i class="fab fa-youtube"></i>
-						<i class="fab fa-facebook-square"></i> 
-					</div>
-					<div class="policies">
-						<a href="#">Privacy policy</a>
-						<a href="#">Terms of use</a>
-						<a href="#">Customer rights</a>
-					</div>
-					<p>&copy; 2020 Mr.Chef, All rights reserved.</p>
-				</div>
-			</footer>
+
+<?php include_once('layouts/footer.php') ?>
+
+
+
 			
 			
-			<script src="vendor/materialize/js/materialize.min.js"></script>
-			<script src="libs/js/materialize.init.js"></script>
-			<script src="libs/js/functions.js"></script>
-			<script src="libs/js/app.js"></script>
-		</body>
-	</html>

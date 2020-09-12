@@ -49,8 +49,7 @@ nav.nav-dark ul li.active {
 }
 
 nav.nav-dark ul li a:hover {
-	background-color: black;
-	border-bottom: 2px solid var(--primary-color); 
+	background-color: #222;
 }
 
 #nav-logo {
@@ -162,8 +161,11 @@ section#services, section#menu, section#about, section#contact{
 
 
 /* services */
+
+
 .card{
 	border-bottom: 3px solid var(--primary-color);
+	overflow: hidden;
 }
 
 .card > .card-image {
