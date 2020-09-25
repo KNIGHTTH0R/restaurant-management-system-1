@@ -2,6 +2,11 @@
 
 	/* header */
 
+	header#header{
+		max-height: 100vh;
+		height: 100vh;
+	}
+
 	#nav-logo {
 		width: 28px;
 		float: left;
@@ -28,6 +33,11 @@
 
 	.header-text > span:last-child{
 		font-size: 3rem;
+	}
+
+	.container.showcase{
+		margin-top: 25%;
+		margin-bottom: 12%;
 	}
 
 	.btn.btn-primary{
